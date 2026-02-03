@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bright Tech Portfolio - Explore our case studies and projects in web development, mobile apps, branding, and digital marketing">
+  <title>Portfolio - Bright Tech</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'bright-gold': '#E5A833',
+            'bright-gold-light': '#F0C35A',
+            'bright-gold-dark': '#C8922A',
+            'dark-primary': '#0A0A0B',
+            'dark-secondary': '#141416',
+            'dark-tertiary': '#1C1C1F',
+            'dark-border': '#2A2A2D',
+          },
+          fontFamily: {
+            'inter': ['Inter', 'system-ui', 'sans-serif'],
+            'tajawal': ['Tajawal', 'Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="gold bright  english-01.png" alt="Bright Tech Logo">
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <button class="lang-btn active">EN</button>
+          <button class="lang-btn" onclick="window.location.href='portfolio-ar.html'">AR</button>
+        </div>
+        <a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span class="breadcrumb-current">Portfolio</span>
+      </nav>
+      <h1 class="heading-1 animate-on-scroll">Our Portfolio</h1>
+      <p class="animate-on-scroll animate-delay-100">Explore our work and see how we've helped businesses achieve their digital goals</p>
+    </div>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section class="section">
+    <div class="container">
+      <!-- Filters -->
+      <div class="portfolio-filters animate-on-scroll">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <div class="portfolio-card animate-on-scroll" data-category="web">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="E-Commerce Platform">
+          <div class="portfolio-overlay">
+            <span style="color: var(--bright-gold); font-size: 0.875rem; margin-bottom: 0.5rem; display: block;">E-Commerce</span>
+            <h3>Luxury Fashion Store</h3>
+            <p>Custom e-commerce platform with AI-powered recommendations</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="portfolio-card animate-on-scroll animate-delay-100" data-category="mobile">
+          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop" alt="Banking App">
+          <div class="portfolio-overlay">
+            <span style="color: var(--bright-gold); font-size: 0.875rem; margin-bottom: 0.5rem; display: block;">FinTech</span>
+            <h3>Digital Banking App</h3>
+            <p>Secure mobile banking solution for iOS & Android</p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="portfolio-card animate-on-scroll animate-delay-200" data-category="branding">
+          <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop" alt="Brand Identity">
+          <div class="portfolio-overlay">
+            <span style="color: var(--bright-gold); font-size: 0.875rem; margin-bottom: 0.5rem; display: block;">Branding</span>
+            <h3>Hotel Chain Rebrand</h3>
+            <p>Complete brand identity for luxury hospitality group</p>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="portfolio-card animate-on-scroll" data-category="web">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop" alt="Dashboard">
+          <div class="portfolio-overlay">
+            <span style="color: var(--bright-gold); font-size: 0.875rem; margin-bottom: 0.5rem; display: block;">SaaS</span>
+            <h3>Analytics Dashboard</h3>
+            <p>Real-time business intelligence platform</p>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="portfolio-card animate-on-scroll animate-delay-100" data-category="design">
+          <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&h=600&fit=crop" alt="Marketing Campaign">
+          <div class="portfolio-overlay">
+            <span style="color: var(--bright-gold); font-size: 0.875rem; margin-bottom: 0.5rem; display: block;">Marketing</span>
+            <h3>Product Launch Campaign</h3>
+            <p>Multi-channel digital marketing campaign</p>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="portfolio-card animate-on-scroll animate-delay-200" data-category="mobile">
+          <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=800&h=600&fit=crop" alt="Fitness App">
+          <div class="portfolio-overlay">
+            <span style="color: var(--bright-gold); font-size: 0.875rem; margin-bottom: 0.5rem; display: block;">Health & Fitness</span>
+            <h3>Fitness Tracking App</h3>
+            <p>Personal training and workout tracking application</p>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="portfolio-card animate-on-scroll" data-category="web">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop" alt="Corporate Website">
+          <div class="portfolio-overlay">
+            <span style="color: var(--bright-gold); font-size: 0.875rem; margin-bottom: 0.5rem; display: block;">Corporate</span>
+            <h3>Law Firm Website</h3>
+            <p>Professional corporate website with client portal</p>
+          </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="portfolio-card animate-on-scroll animate-delay-100" data-category="branding">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop" alt="Startup Branding">
+          <div class="portfolio-overlay">
+            <span style="color: var(--bright-gold); font-size: 0.875rem; margin-bottom: 0.5rem; display: block;">Startup</span>
+            <h3>Tech Startup Identity</h3>
+            <p>Brand strategy and visual identity for AI startup</p>
+          </div>
+        </div>
+
+        <!-- Project 9 -->
+        <div class="portfolio-card animate-on-scroll animate-delay-200" data-category="mobile">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop" alt="Food Delivery App">
+          <div class="portfolio-overlay">
+            <span style="color: var(--bright-gold); font-size: 0.875rem; margin-bottom: 0.5rem; display: block;">Food & Delivery</span>
+            <h3>Food Delivery Platform</h3>
+            <p>Restaurant ordering and delivery management system</p>
+          </div>
+        </div>
+
+        <!-- Project 10 -->
+        <div class="portfolio-card animate-on-scroll" data-category="design">
+          <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=800&h=600&fit=crop" alt="UI Design System">
+          <div class="portfolio-overlay">
+            <span style="color: var(--bright-gold); font-size: 0.875rem; margin-bottom: 0.5rem; display: block;">Design System</span>
+            <h3>Enterprise UI Kit</h3>
+            <p>Comprehensive design system for enterprise applications</p>
+          </div>
+        </div>
+
+        <!-- Project 11 -->
+        <div class="portfolio-card animate-on-scroll animate-delay-100" data-category="web">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop" alt="Learning Platform">
+          <div class="portfolio-overlay">
+            <span style="color: var(--bright-gold); font-size: 0.875rem; margin-bottom: 0.5rem; display: block;">EdTech</span>
+            <h3>Online Learning Platform</h3>
+            <p>Interactive e-learning platform with video streaming</p>
+          </div>
+        </div>
+
+        <!-- Project 12 -->
+        <div class="portfolio-card animate-on-scroll animate-delay-200" data-category="branding">
+          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop" alt="Retail Branding">
+          <div class="portfolio-overlay">
+            <span style="color: var(--bright-gold); font-size: 0.875rem; margin-bottom: 0.5rem; display: block;">Retail</span>
+            <h3>Retail Store Branding</h3>
+            <p>Complete brand identity for premium retail chain</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Case Study -->
+  <section class="section" style="background: var(--dark-secondary);">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Featured Case Study</span>
+        <h2 class="heading-2">Digital Banking Transformation</h2>
+        <p>How we helped a regional bank modernize their digital presence</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div class="animate-on-scroll">
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=500&fit=crop" alt="Banking Case Study" style="border-radius: var(--radius-xl); width: 100%;">
+        </div>
+        <div class="animate-on-scroll animate-delay-100">
+          <h3 class="heading-3 mb-4">The Challenge</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+            A leading regional bank needed to modernize their digital banking experience to compete with emerging fintech solutions while maintaining enterprise-grade security.
+          </p>
+
+          <h3 class="heading-3 mb-4">Our Solution</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+            We designed and developed a comprehensive mobile banking platform with biometric authentication, real-time transactions, and an intuitive user interface.
+          </p>
+
+          <h3 class="heading-3 mb-4">The Results</h3>
+          <div class="grid grid-cols-3 gap-4 mb-6">
+            <div class="text-center">
+              <div style="font-size: 2rem; font-weight: 700; color: var(--bright-gold);">250%</div>
+              <div style="font-size: 0.875rem; color: var(--text-secondary);">App Downloads Increase</div>
+            </div>
+            <div class="text-center">
+              <div style="font-size: 2rem; font-weight: 700; color: var(--bright-gold);">4.8</div>
+              <div style="font-size: 0.875rem; color: var(--text-secondary);">App Store Rating</div>
+            </div>
+            <div class="text-center">
+              <div style="font-size: 2rem; font-weight: 700; color: var(--bright-gold);">60%</div>
+              <div style="font-size: 0.875rem; color: var(--text-secondary);">Reduced Support Tickets</div>
+            </div>
+          </div>
+
+          <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Logos -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Trusted By</span>
+        <h2 class="heading-2">Our Clients</h2>
+        <p>We've had the privilege of working with amazing companies</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-60">
+        <div class="text-center animate-on-scroll">
+          <div style="font-size: 1.5rem; font-weight: 700; color: var(--text-secondary);">TechStart</div>
+        </div>
+        <div class="text-center animate-on-scroll animate-delay-100">
+          <div style="font-size: 1.5rem; font-weight: 700; color: var(--text-secondary);">FinanceApp</div>
+        </div>
+        <div class="text-center animate-on-scroll animate-delay-200">
+          <div style="font-size: 1.5rem; font-weight: 700; color: var(--text-secondary);">Elegance</div>
+        </div>
+        <div class="text-center animate-on-scroll">
+          <div style="font-size: 1.5rem; font-weight: 700; color: var(--text-secondary);">MediaHub</div>
+        </div>
+        <div class="text-center animate-on-scroll animate-delay-100">
+          <div style="font-size: 1.5rem; font-weight: 700; color: var(--text-secondary);">DataFlow</div>
+        </div>
+        <div class="text-center animate-on-scroll animate-delay-200">
+          <div style="font-size: 1.5rem; font-weight: 700; color: var(--text-secondary);">CloudNine</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-section animate-on-scroll">
+        <div class="cta-glow"></div>
+        <div class="cta-content">
+          <h2 class="heading-2">Have a Project in Mind?</h2>
+          <p>Let's discuss how we can help bring your vision to life with our expertise.</p>
+          <div class="flex items-center justify-center gap-4 flex-wrap">
+            <a href="contact.html" class="btn btn-primary btn-lg">Get a Free Quote</a>
+            <a href="services.html" class="btn btn-secondary btn-lg">Explore Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="gold bright  english-01.png" alt="Bright Tech Logo">
+          </div>
+          <p>Bright for Business Solutions Development - Your trusted partner for premium digital solutions that drive business growth and success.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Mobile Apps</a></li>
+            <li><a href="services.html">UI/UX Design</a></li>
+            <li><a href="services.html">SEO Services</a></li>
+            <li><a href="services.html">Branding</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:info@brighttech.com">info@brighttech.com</a></li>
+            <li><a href="tel:+966500000000">+966 50 000 0000</a></li>
+            <li>Riyadh, Saudi Arabia</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Bright for Business Solutions Development. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

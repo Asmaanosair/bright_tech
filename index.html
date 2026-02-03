@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bright for Business Solutions Development - Premium Web Development, Mobile Apps, UI/UX Design, SEO, Branding & Digital Marketing Services">
+  <meta name="keywords" content="web development, mobile apps, UI/UX design, SEO, branding, digital marketing, software house">
+  <title>Bright Tech - Premium Digital Solutions</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'bright-gold': '#E5A833',
+            'bright-gold-light': '#F0C35A',
+            'bright-gold-dark': '#C8922A',
+            'dark-primary': '#0A0A0B',
+            'dark-secondary': '#141416',
+            'dark-tertiary': '#1C1C1F',
+            'dark-border': '#2A2A2D',
+          },
+          fontFamily: {
+            'inter': ['Inter', 'system-ui', 'sans-serif'],
+            'tajawal': ['Tajawal', 'Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="gold bright  english-01.png" alt="Bright Tech Logo">
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <button class="lang-btn active">EN</button>
+          <button class="lang-btn" onclick="window.location.href='index-ar.html'">AR</button>
+        </div>
+        <a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-gradient"></div>
+      <div class="hero-grid"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge animate-on-scroll">
+          Premium Digital Solutions
+        </div>
+
+        <h1 class="heading-display animate-on-scroll animate-delay-100">
+          Transforming Ideas Into <span class="text-gradient">Digital Excellence</span>
+        </h1>
+
+        <p class="hero-description animate-on-scroll animate-delay-200">
+          We craft exceptional digital experiences that elevate brands and drive business growth. From stunning websites to powerful mobile apps, we bring your vision to life.
+        </p>
+
+        <div class="hero-cta animate-on-scroll animate-delay-300">
+          <a href="contact.html" class="btn btn-primary btn-lg">Start Your Project</a>
+          <a href="portfolio.html" class="btn btn-secondary btn-lg">View Our Work</a>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats animate-on-scroll animate-delay-400">
+        <div class="stat-item">
+          <div class="stat-number">150+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">8+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">25+</div>
+          <div class="stat-label">Team Members</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">What We Do</span>
+        <h2 class="heading-2">Our Premium Services</h2>
+        <p>Comprehensive digital solutions tailored to elevate your business to new heights</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Web Development -->
+        <div class="card card-highlight service-card animate-on-scroll">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
+          </div>
+          <h3>Web Development</h3>
+          <p>Custom websites and web applications built with cutting-edge technologies</p>
+        </div>
+
+        <!-- Mobile Apps -->
+        <div class="card card-highlight service-card animate-on-scroll animate-delay-100">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3>Mobile Apps</h3>
+          <p>Native iOS & Android applications that deliver exceptional user experiences</p>
+        </div>
+
+        <!-- UI/UX Design -->
+        <div class="card card-highlight service-card animate-on-scroll animate-delay-200">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+            </svg>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Intuitive, beautiful interfaces that delight users and drive engagement</p>
+        </div>
+
+        <!-- Content Writing -->
+        <div class="card card-highlight service-card animate-on-scroll animate-delay-300">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+            </svg>
+          </div>
+          <h3>Content Writing</h3>
+          <p>Compelling content that tells your story and connects with your audience</p>
+        </div>
+
+        <!-- SEO Services -->
+        <div class="card card-highlight service-card animate-on-scroll">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+          <h3>SEO Services</h3>
+          <p>Data-driven strategies to boost your visibility and organic traffic</p>
+        </div>
+
+        <!-- Graphic Design -->
+        <div class="card card-highlight service-card animate-on-scroll animate-delay-100">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3>Graphic Design</h3>
+          <p>Stunning visuals that capture attention and communicate your message</p>
+        </div>
+
+        <!-- Motion Graphics -->
+        <div class="card card-highlight service-card animate-on-scroll animate-delay-200">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3>Motion Graphics</h3>
+          <p>Dynamic animations that bring your brand to life and engage viewers</p>
+        </div>
+
+        <!-- Branding -->
+        <div class="card card-highlight service-card animate-on-scroll animate-delay-300">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          <h3>Branding & Logo</h3>
+          <p>Distinctive brand identities that set you apart from the competition</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-8 animate-on-scroll">
+        <a href="services.html" class="btn btn-secondary">Explore All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="section" style="background: var(--dark-secondary);">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Why Choose Us</span>
+        <h2 class="heading-2">The Bright Advantage</h2>
+        <p>What sets us apart in delivering exceptional digital solutions</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-item animate-on-scroll">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3>Premium Quality</h3>
+            <p>We never compromise on quality. Every project receives our full attention and expertise.</p>
+          </div>
+        </div>
+
+        <div class="feature-item animate-on-scroll animate-delay-100">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3>Fast Delivery</h3>
+            <p>We understand time is valuable. Our efficient processes ensure timely project completion.</p>
+          </div>
+        </div>
+
+        <div class="feature-item animate-on-scroll animate-delay-200">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3>Expert Team</h3>
+            <p>Our talented professionals bring years of experience and passion to every project.</p>
+          </div>
+        </div>
+
+        <div class="feature-item animate-on-scroll animate-delay-300">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3>Client-Focused</h3>
+            <p>Your success is our priority. We work closely with you to achieve your goals.</p>
+          </div>
+        </div>
+
+        <div class="feature-item animate-on-scroll">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3>Modern Technology</h3>
+            <p>We use the latest technologies to build scalable, future-proof solutions.</p>
+          </div>
+        </div>
+
+        <div class="feature-item animate-on-scroll animate-delay-100">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3>24/7 Support</h3>
+            <p>We're here for you around the clock with dedicated support and maintenance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Preview Section -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Our Work</span>
+        <h2 class="heading-2">Featured Projects</h2>
+        <p>A showcase of our finest work across various industries</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="portfolio-card animate-on-scroll" data-category="web">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="E-Commerce Platform">
+          <div class="portfolio-overlay">
+            <h3>E-Commerce Platform</h3>
+            <p>Web Development</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card animate-on-scroll animate-delay-100" data-category="mobile">
+          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop" alt="Banking App">
+          <div class="portfolio-overlay">
+            <h3>Banking Mobile App</h3>
+            <p>iOS & Android Development</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card animate-on-scroll animate-delay-200" data-category="branding">
+          <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop" alt="Brand Identity">
+          <div class="portfolio-overlay">
+            <h3>Luxury Brand Identity</h3>
+            <p>Branding & Logo Design</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card animate-on-scroll" data-category="web">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop" alt="Dashboard">
+          <div class="portfolio-overlay">
+            <h3>Analytics Dashboard</h3>
+            <p>UI/UX Design & Development</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card animate-on-scroll animate-delay-100" data-category="design">
+          <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&h=600&fit=crop" alt="Marketing Campaign">
+          <div class="portfolio-overlay">
+            <h3>Marketing Campaign</h3>
+            <p>Graphic Design & Motion</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card animate-on-scroll animate-delay-200" data-category="mobile">
+          <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=800&h=600&fit=crop" alt="Fitness App">
+          <div class="portfolio-overlay">
+            <h3>Fitness Tracking App</h3>
+            <p>Mobile App Development</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-8 animate-on-scroll">
+        <a href="portfolio.html" class="btn btn-secondary">View All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section" style="background: var(--dark-secondary);">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="heading-2">What Our Clients Say</h2>
+        <p>Don't just take our word for it - hear from our satisfied clients</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="testimonial-card animate-on-scroll">
+          <p class="testimonial-quote">"Bright Tech delivered beyond our expectations. Their attention to detail and commitment to quality made all the difference in our project's success."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Ahmed Hassan" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4>Ahmed Hassan</h4>
+              <p>CEO, TechStart Inc.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card animate-on-scroll animate-delay-100">
+          <p class="testimonial-quote">"The mobile app they built for us has received incredible feedback from our users. Professional team with excellent communication throughout."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="Sarah Johnson" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4>Sarah Johnson</h4>
+              <p>Product Manager, FinanceApp</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card animate-on-scroll animate-delay-200">
+          <p class="testimonial-quote">"Our brand identity has never looked better. Bright Tech understood our vision perfectly and translated it into a stunning visual identity."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Omar Al-Rashid" class="testimonial-avatar">
+            <div class="testimonial-info">
+              <h4>Omar Al-Rashid</h4>
+              <p>Founder, Elegance Hotels</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-section animate-on-scroll">
+        <div class="cta-glow"></div>
+        <div class="cta-content">
+          <h2 class="heading-2">Ready to Start Your Project?</h2>
+          <p>Let's transform your ideas into exceptional digital experiences. Get in touch with us today.</p>
+          <div class="flex items-center justify-center gap-4 flex-wrap">
+            <a href="contact.html" class="btn btn-primary btn-lg">Get a Free Quote</a>
+            <a href="tel:+966500000000" class="btn btn-secondary btn-lg">Call Us Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="gold bright  english-01.png" alt="Bright Tech Logo">
+          </div>
+          <p>Bright for Business Solutions Development - Your trusted partner for premium digital solutions that drive business growth and success.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">Mobile Apps</a></li>
+            <li><a href="services.html">UI/UX Design</a></li>
+            <li><a href="services.html">SEO Services</a></li>
+            <li><a href="services.html">Branding</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:info@brighttech.com">info@brighttech.com</a></li>
+            <li><a href="tel:+966500000000">+966 50 000 0000</a></li>
+            <li>Riyadh, Saudi Arabia</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Bright for Business Solutions Development. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

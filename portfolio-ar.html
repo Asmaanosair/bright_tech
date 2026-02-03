@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="أعمالنا - برايت تك: استعرض مشاريعنا في تطوير المواقع وتطبيقات الجوال والعلامات التجارية">
+  <title>أعمالنا - برايت تك</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-tajawal">
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-container">
+      <a href="index-ar.html" class="nav-logo">
+        <img src="gold bright  english-01.png" alt="برايت تك">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index-ar.html" class="nav-link">الرئيسية</a></li>
+        <li><a href="services-ar.html" class="nav-link">خدماتنا</a></li>
+        <li><a href="about-ar.html" class="nav-link">من نحن</a></li>
+        <li><a href="portfolio-ar.html" class="nav-link active">أعمالنا</a></li>
+        <li><a href="contact-ar.html" class="nav-link">تواصل معنا</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <button class="lang-btn" onclick="window.location.href='portfolio.html'">EN</button>
+          <button class="lang-btn active">AR</button>
+        </div>
+        <a href="contact-ar.html" class="btn btn-primary btn-sm">احصل على عرض</a>
+      </div>
+      <button class="nav-toggle"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index-ar.html">الرئيسية</a>
+        <span>/</span>
+        <span class="breadcrumb-current">أعمالنا</span>
+      </nav>
+      <h1 class="heading-1 animate-on-scroll">معرض أعمالنا</h1>
+      <p class="animate-on-scroll animate-delay-100">استكشف أعمالنا وشاهد كيف ساعدنا الشركات في تحقيق أهدافها الرقمية</p>
+    </div>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section class="section">
+    <div class="container">
+      <!-- Filters -->
+      <div class="portfolio-filters animate-on-scroll">
+        <button class="filter-btn active" data-filter="all">جميع المشاريع</button>
+        <button class="filter-btn" data-filter="web">تطوير المواقع</button>
+        <button class="filter-btn" data-filter="mobile">تطبيقات الجوال</button>
+        <button class="filter-btn" data-filter="branding">العلامة التجارية</button>
+        <button class="filter-btn" data-filter="design">التصميم</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid">
+        <div class="portfolio-card animate-on-scroll" data-category="web">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="منصة تجارة إلكترونية">
+          <div class="portfolio-overlay">
+            <span style="color: var(--bright-gold); font-size: 0.875rem; margin-bottom: 0.5rem; display: block;">تجارة إلكترونية</span>
+            <h3>متجر أزياء فاخرة</h3>
+            <p>منصة تجارة إلكترونية مخصصة مع توصيات ذكية</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card animate-on-scroll animate-delay-100" data-category="mobile">
+          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop" alt="تطبيق بنكي">
+          <div class="portfolio-overlay">
+            <span style="color: var(--bright-gold); font-size: 0.875rem; margin-bottom: 0.5rem; display: block;">التقنية المالية</span>
+            <h3>تطبيق بنكي رقمي</h3>
+            <p>حل بنكي آمن لأنظمة iOS و Android</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card animate-on-scroll animate-delay-200" data-category="branding">
+          <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop" alt="هوية تجارية">
+          <div class="portfolio-overlay">
+            <span style="color: var(--bright-gold); font-size: 0.875rem; margin-bottom: 0.5rem; display: block;">العلامة التجارية</span>
+            <h3>هوية سلسلة فنادق</h3>
+            <p>هوية تجارية متكاملة لمجموعة فنادق فاخرة</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card animate-on-scroll" data-category="web">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop" alt="لوحة تحكم">
+          <div class="portfolio-overlay">
+            <span style="color: var(--bright-gold); font-size: 0.875rem; margin-bottom: 0.5rem; display: block;">SaaS</span>
+            <h3>لوحة تحليلات</h3>
+            <p>منصة ذكاء أعمال بالوقت الفعلي</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card animate-on-scroll animate-delay-100" data-category="design">
+          <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&h=600&fit=crop" alt="حملة تسويقية">
+          <div class="portfolio-overlay">
+            <span style="color: var(--bright-gold); font-size: 0.875rem; margin-bottom: 0.5rem; display: block;">التسويق</span>
+            <h3>حملة إطلاق منتج</h3>
+            <p>حملة تسويق رقمي متعددة القنوات</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card animate-on-scroll animate-delay-200" data-category="mobile">
+          <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=800&h=600&fit=crop" alt="تطبيق لياقة">
+          <div class="portfolio-overlay">
+            <span style="color: var(--bright-gold); font-size: 0.875rem; margin-bottom: 0.5rem; display: block;">الصحة واللياقة</span>
+            <h3>تطبيق تتبع اللياقة</h3>
+            <p>تطبيق تدريب شخصي وتتبع التمارين</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card animate-on-scroll" data-category="web">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop" alt="موقع شركة">
+          <div class="portfolio-overlay">
+            <span style="color: var(--bright-gold); font-size: 0.875rem; margin-bottom: 0.5rem; display: block;">الشركات</span>
+            <h3>موقع مكتب محاماة</h3>
+            <p>موقع احترافي مع بوابة عملاء</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card animate-on-scroll animate-delay-100" data-category="branding">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop" alt="هوية ناشئة">
+          <div class="portfolio-overlay">
+            <span style="color: var(--bright-gold); font-size: 0.875rem; margin-bottom: 0.5rem; display: block;">الشركات الناشئة</span>
+            <h3>هوية شركة تقنية</h3>
+            <p>استراتيجية وهوية بصرية لشركة ذكاء اصطناعي</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card animate-on-scroll animate-delay-200" data-category="mobile">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop" alt="تطبيق توصيل">
+          <div class="portfolio-overlay">
+            <span style="color: var(--bright-gold); font-size: 0.875rem; margin-bottom: 0.5rem; display: block;">الطعام والتوصيل</span>
+            <h3>منصة توصيل طعام</h3>
+            <p>نظام طلب وإدارة توصيل المطاعم</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Case Study -->
+  <section class="section" style="background: var(--dark-secondary);">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">دراسة حالة مميزة</span>
+        <h2 class="heading-2">التحول الرقمي البنكي</h2>
+        <p>كيف ساعدنا بنكاً إقليمياً في تحديث تواجده الرقمي</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div class="animate-on-scroll">
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=500&fit=crop" alt="دراسة حالة بنكية" style="border-radius: var(--radius-xl); width: 100%;">
+        </div>
+        <div class="animate-on-scroll animate-delay-100">
+          <h3 class="heading-3 mb-4">التحدي</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+            احتاج بنك إقليمي رائد لتحديث تجربته البنكية الرقمية للتنافس مع حلول التقنية المالية الناشئة مع الحفاظ على أمان على مستوى المؤسسات.
+          </p>
+
+          <h3 class="heading-3 mb-4">حلنا</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+            صممنا وطورنا منصة بنكية متكاملة للجوال مع مصادقة بيومترية ومعاملات فورية وواجهة مستخدم بديهية.
+          </p>
+
+          <h3 class="heading-3 mb-4">النتائج</h3>
+          <div class="grid grid-cols-3 gap-4 mb-6">
+            <div class="text-center">
+              <div style="font-size: 2rem; font-weight: 700; color: var(--bright-gold);">250%</div>
+              <div style="font-size: 0.875rem; color: var(--text-secondary);">زيادة التحميلات</div>
+            </div>
+            <div class="text-center">
+              <div style="font-size: 2rem; font-weight: 700; color: var(--bright-gold);">4.8</div>
+              <div style="font-size: 0.875rem; color: var(--text-secondary);">تقييم المتجر</div>
+            </div>
+            <div class="text-center">
+              <div style="font-size: 2rem; font-weight: 700; color: var(--bright-gold);">60%</div>
+              <div style="font-size: 0.875rem; color: var(--text-secondary);">انخفاض تذاكر الدعم</div>
+            </div>
+          </div>
+
+          <a href="contact-ar.html" class="btn btn-primary">ابدأ مشروعك</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-section animate-on-scroll">
+        <div class="cta-glow"></div>
+        <div class="cta-content">
+          <h2 class="heading-2">لديك مشروع في ذهنك؟</h2>
+          <p>دعنا نناقش كيف يمكننا المساعدة في تحقيق رؤيتك بخبرتنا.</p>
+          <div class="flex items-center justify-center gap-4 flex-wrap">
+            <a href="contact-ar.html" class="btn btn-primary btn-lg">احصل على عرض مجاني</a>
+            <a href="services-ar.html" class="btn btn-secondary btn-lg">استكشف الخدمات</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><img src="gold bright  english-01.png" alt="برايت تك"></div>
+          <p>برايت لتطوير حلول الأعمال - شريككم الموثوق لحلول رقمية متميزة.</p>
+        </div>
+        <div class="footer-column">
+          <h4>خدماتنا</h4>
+          <ul class="footer-links">
+            <li><a href="services-ar.html">تطوير المواقع</a></li>
+            <li><a href="services-ar.html">تطبيقات الجوال</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>الشركة</h4>
+          <ul class="footer-links">
+            <li><a href="about-ar.html">من نحن</a></li>
+            <li><a href="contact-ar.html">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>تواصل معنا</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:info@brighttech.com">info@brighttech.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 برايت لتطوير حلول الأعمال. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
